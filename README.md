@@ -1,5 +1,5 @@
 # WellLit-OrderedCollections
-
+#---- This is a work in progress and currently non-functional
 This is a fork of the WellToWell repository from CZ Biohub's Well-Lit device. The code has been updated so that it works with more recent versions of the python and kivy dependencies, and a new widget configuration has been added to facilitate a specific build of the device with different electronic components.
 
 While public, this code is currently a work in progress and non-functional. This README will updated when the project is ready to use.
@@ -14,14 +14,15 @@ The files needed to build the Well-Lit device can be downloaded from https://osf
 
 1. Install Anaconda (from www.anaconda.com - tested on Anaconda version 4.8.3) selecting the option 'ADD TO PATH' in the installer.
 2. Make anaconda environment:<br/>
-        Open up anaconda prompt and type: `conda create -n WellLit python=3.7.6`
-3. Activate the environment with `conda activate WellLit`
+        Open up anaconda prompt and type: `conda create -n well_lit python=3.10`
+3. Activate the environment with `conda activate well_lit`
 4. Install dependencies:<br/>
-        `conda install matplotlib==3.1.3`<br/>
+        `conda install matplotlib`<br/>
+        `conda install pandas`<br/>
         `conda install -c conda-forge kivy`<br/>
         `pip install kivy-garden`<br/>
-        `garden install graph`<br/>
-        `garden install matplotlib`<br/>
+        `pip install kivy_garden.graph --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
+        `pip install kivy_garden.matplotlib --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
 5. Clone this repo https://github.com/czbiohub/WellLit-WelltoWell.git or download as a zip file and then unzip.
 6. Open a git bash terminal in the repository folder you just downloaded and enter the commands 'git submodule update --init' to finish obtaining the required files. If you are not using git and downloaded a zipped folder, then download and extract the repository from 'https://github.com/czbiohub/WellLit.git' into the '../WellLit' folder in the first repository you downloaded.
 7. Create a shortcut to the 'startup.bat' file located in folder and place it on the desktop.
