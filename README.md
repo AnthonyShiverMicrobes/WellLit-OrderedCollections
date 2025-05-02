@@ -2,6 +2,8 @@
 
 This is a fork of the WellToWell repository from CZ Biohub's Well-Lit device. The code has been updated so that it works with more recent versions of the python and kivy dependencies, and a new widget configuration has been added to facilitate a specific build of the device with different electronic components.
 
+While public, this code is currently a work in progress and non-functional. This README will updated when the project is ready to use.
+
 From the original:
 This repository contains the code needed to run the CZ Biohub's Well-Lit device in the "Tube to Well-Lit" configuration, as described in the manuscript at:
 https://www.biorxiv.org/content/10.1101/2021.12.17.473010v2
