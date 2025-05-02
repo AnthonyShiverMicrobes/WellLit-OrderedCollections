@@ -3,15 +3,15 @@
     "records_dir" : "",
 
     "96": {
-    "A1_X_source": 0.17,
-    "A1_Y_source": -0.075,
-    "A1_X_dest": 0.17,
-    "A1_Y_dest": -0.15,
+    "A1_X_source": 0.03,
+    "A1_Y_source": -0.08,
+    "A1_X_dest": 0.03,
+    "A1_Y_dest": -0.08,
     "size_param": {
-        "circle": 0.030,
+        "circle": 0.020,
         "square": 0.065
     },
-    "well_spacing": 0.07475
+    "well_spacing": 0.0655
 },
     "384": {
     "A1_X_source": 0.16,

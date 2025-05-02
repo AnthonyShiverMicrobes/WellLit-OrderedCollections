@@ -90,7 +90,7 @@ class WelltoWellWidget(WellLitWidget):
             except TConfirm as conf:
                 self.showPopup(conf, 'Load Successful')
                 if not self.initialized:
-                    self.reset_plates(self.config_path)
+                    self.reset_plates()
                     self.initialized = True
                 self.wtw.tp.id_type = ''
                 self.updateLights()
@@ -322,6 +322,7 @@ class WelltoWellWidget(WellLitWidget):
 
 
 class WellToWellApp(App):
+    kv_file='OrderedLayout.kv'
     def build(self):
         return WelltoWellWidget()
 
@@ -339,5 +340,5 @@ if __name__ == '__main__':
     logging.info('Session started')
 
     Window.size = (1600, 1200)
-    Window.fullscreen = True
+    Window.fullscreen = False
     WellToWellApp().run()
