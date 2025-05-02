@@ -1,18 +1,19 @@
 # WellLit-OrderedCollections
 #---- This is a work in progress and currently non-functional
+
 This is a fork of the WellToWell repository from CZ Biohub's Well-Lit device. The code has been updated so that it works with more recent versions of the python and kivy dependencies, and a new widget configuration has been added to facilitate a specific build of the device with different electronic components.
 
 While public, this code is currently a work in progress and non-functional. This README will updated when the project is ready to use.
 
 From the original:
-This repository contains the code needed to run the CZ Biohub's Well-Lit device in the "Tube to Well-Lit" configuration, as described in the manuscript at:
-https://www.biorxiv.org/content/10.1101/2021.12.17.473010v2
+> This repository contains the code needed to run the CZ Biohub's Well-Lit device in the "Tube to Well-Lit" configuration, as described in the manuscript at:
+> https://www.biorxiv.org/content/10.1101/2021.12.17.473010v2
+>
+> The files needed to build the Well-Lit device can be downloaded from https://osf.io/f9nh5/.
 
-The files needed to build the Well-Lit device can be downloaded from https://osf.io/f9nh5/.
+## Installation Instructions for Mac (updated instructions)
 
-## Installation Instructions for Mac
-
-1. Install Anaconda (from www.anaconda.com - tested on Anaconda version 4.8.3) selecting the option 'ADD TO PATH' in the installer.
+1. Install Anaconda (from www.anaconda.com - tested on Anaconda version 4.8.3).
 2. Make anaconda environment:<br/>
         Open up anaconda prompt and type: `conda create -n well_lit python=3.10`
 3. Activate the environment with `conda activate well_lit`
