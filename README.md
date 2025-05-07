@@ -24,10 +24,30 @@ From the original:
         `pip install kivy-garden`<br/>
         `pip install kivy_garden.graph --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
         `pip install kivy_garden.matplotlib --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
-5. Clone this repo (https://github.com/AnthonyShiverMicrobes/WellLit-OrderedCollections.git)
-6a. In the official version of the package, one would next download the submodule for WellLit, because this code has been modified, its been included within this fork (no action needed)
+5. Clone this repo (https://github.com/AnthonyShiverMicrobes/WellLit-OrderedCollections.git)<br/>
+6a. In the official version of the package, one would next download the submodule for WellLit, because this code has been modified, its been included within this fork (no action needed)<br/>
 6b. To run the program:<br/>
         `python WellToWellGUI.py`<br/>
+
+## Installation Instructions for Windows (updated instructions, final product)
+
+1. Install Anaconda (from www.anaconda.com - tested on Anaconda version 4.8.3).
+2. Make anaconda environment:<br/>
+        Open up anaconda prompt and type: `conda create -n well_lit python=3.10`
+3. Activate the environment with `conda activate well_lit`
+4. Install dependencies:<br/>
+        `conda install matplotlib`<br/>
+        `conda install pandas`<br/>
+        `pip install pypiwin3`<br/>
+        `conda install -c conda-forge kivy`<br/>
+        `pip install kivy-deps.angle~=0.3.3`<br/>
+        `pip install kivy-deps.glew~=0.3.1`<br/>
+        `pip install kivy-deps.sdl2~=0.6.0`<br/>   
+        `pip install kivy-garden`<br/>
+        `pip install kivy_garden.graph --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
+        `pip install kivy_garden.matplotlib --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
+6. Clone this repo (https://github.com/AnthonyShiverMicrobes/WellLit-OrderedCollections.git)<br/>
+
 
 ### Software Configuration
 Unmodified from the original:<br/>
