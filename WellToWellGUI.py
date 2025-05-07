@@ -1,3 +1,7 @@
+from kivy.config import Config
+Config.set('graphics', 'fullscreen', 'auto')
+Config.set('graphics', 'width', '1600')
+Config.set('graphics', 'height', '1200')
 import kivy
 kivy.require('1.11.1')
 from kivy.app import App
@@ -339,6 +343,6 @@ if __name__ == '__main__':
     logger = logging.getLogger()  # get the root loggers
     logging.info('Session started')
 
-    Window.size = (1600, 1200)
-    Window.fullscreen = False
+   # Window.size = (1600, 1200)
+   # Window.fullscreen = True
     WellToWellApp().run()
