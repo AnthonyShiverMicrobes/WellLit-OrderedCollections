@@ -42,7 +42,7 @@ From the original:
         `conda install -c conda-forge kivy`<br/>
         `pip install kivy-deps.angle~=0.3.3`<br/>
         `pip install kivy-deps.glew~=0.3.1`<br/>
-        `pip install kivy-deps.sdl2~=0.6.0`<br/>   
+        `pip install kivy-deps.sdl2~=0.6.0`<br/>
         `pip install kivy-garden`<br/>
         `pip install kivy_garden.graph --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
         `pip install kivy_garden.matplotlib --extra-index-url https://kivy-garden.github.io/simple/ `<br/>
