@@ -121,7 +121,8 @@ class WellPlot(BoxLayout):
 class ConfirmPopup(Popup):
 	def __init__(self, txt_file_path=None):
 		super(ConfirmPopup, self).__init__()
-		self.pos_hint={'left': 1}
+		self.size_hint=(0.3, 0.375)
+		self.pos_hint={'center_x': 0.5,'y':0}
 		self.txt_file_path = txt_file_path
 
 	def show(self, text):
@@ -152,8 +153,10 @@ class ConfirmPopup(Popup):
 
 
 class WellLitPopup(Popup):
-	def __init__(self):
-		super(WellLitPopup, self).__init__()
+	def __init__(self, **kwargs):
+		kwargs.setdefault('size_hint', (0.3, 0.375))
+		kwargs.setdefault('pos_hint', {'center_x': .5, 'y': 0})
+		super(WellLitPopup, self).__init__(**kwargs)
 
 	def show(self, error_str, func=None):
 		content = BoxLayout(orientation='vertical')

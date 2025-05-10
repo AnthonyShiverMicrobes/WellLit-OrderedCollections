@@ -3,6 +3,7 @@
 # 3/15/2020
 
 import logging, csv, uuid, datetime, os, re, json
+logging.getLogger('matplotlib.font_manager').setLevel(logging.INFO)
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -159,7 +160,7 @@ class WelltoWell:
 					raise TError('Missing well name in row %s or improperly formatted csv' %str(row_idx + 2))
 
 				well_name = well_name[0] + well_name[1:].lstrip('0')
-				self.df['SourceWell'][row_idx] = well_name
+				self.df.loc[row_idx,'SourceWell'] = well_name
 
 				if not re.match(r'([a-h]|[A-H])([1-9](?!.)|1[0-2])', well_name):
 					raise TError('Invalid source well name %s in row %s of csv file' %(well_name, str(row_idx + 2)))
@@ -169,7 +170,7 @@ class WelltoWell:
 					raise TError('Missing well name in row %s or improperly formatted csv' % str(row_idx + 2))
 
 				well_name = well_name[0] + well_name[1:].lstrip('0')
-				self.df['DestWell'][row_idx] = well_name
+				self.df.loc[row_idx,'DestWell'] = well_name
 
 				if not re.match(r'([a-h]|[A-H])([1-9](?!.)|1[0-2])', well_name):
 					raise TError('Invalid destination well name %s in row %s of csv file' %(well_name, str(row_idx + 2)))
@@ -281,10 +282,10 @@ class WTWTransferProtocol(TransferProtocol):
 				plate_df = df[df['PlateName'] == plate_name]
 				plate_transfers = []
 				for idx, plate_df_entry in plate_df.iterrows():
-					src_plt = plate_df_entry[0]
+					src_plt = plate_df_entry.iloc[0]
 					dest_plt = wtw.dest_plate
-					src_well = plate_df_entry[1]
-					dest_well = plate_df_entry[2]
+					src_well = plate_df_entry.iloc[1]
+					dest_well = plate_df_entry.iloc[2]
 					unique_id = str(uuid.uuid1())
 
 					tf = Transfer(unique_id,

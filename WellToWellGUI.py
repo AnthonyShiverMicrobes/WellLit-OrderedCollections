@@ -1,5 +1,5 @@
 from kivy.config import Config
-Config.set('graphics', 'fullscreen', 'auto')
+Config.set('graphics', 'fullscreen', '0')
 Config.set('graphics', 'width', '1600')
 Config.set('graphics', 'height', '1200')
 import kivy
@@ -109,8 +109,8 @@ class WelltoWellWidget(WellLitWidget):
     def show_load(self):
         content = LoadDialog(load=self.load, cancel=self.dismiss_popup, load_path=self.load_path)
         self._popup = Popup(title='Load File', content=content)
-        self._popup.size_hint = (0.37, .8)
-        self._popup.pos_hint = {'x': 10.0 / Window.width, 'y': 100 / Window.height}
+        self._popup.size_hint = (0.3, 0.375)
+        self._popup.pos_hint = {'center_x': 0.5, 'y': 0}
         self._popup.open()
 
     def updateLights(self):

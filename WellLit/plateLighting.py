@@ -131,9 +131,10 @@ class PlateLighting:
 
 	def refresh(self):
 		self.ax.clear()
-		self.ax.axis('off')
 		self.ax.axis('equal')
 		self.ax.axis([0,1,0,1])
+		self.ax.axis('off')
+
 		for name in self.well_list:
 			self.ax.add_artist(self.well_dict[name].marker)
 		self.fig.canvas.draw()
