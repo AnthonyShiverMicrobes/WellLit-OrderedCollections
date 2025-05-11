@@ -233,6 +233,7 @@ class WelltoWellWidget(WellLitWidget):
             else:
                 self.showPopup(err, 'Unable to complete plate')
             self.status = err.__str__()
+            self.next()
         except TConfirm as conf:
             self.nextPlateConfirm(None)
             self.wtw.writeTransferRecordFiles(None)
