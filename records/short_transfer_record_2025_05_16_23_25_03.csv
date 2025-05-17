@@ -1,7 +1,0 @@
-Timestamp,Source plate,Source well,Destination plate,Destination well,Status
-2025-05-17 06:25:21.237,p1,A2,dest-plate-001,A1,skipped
-2025-05-17 06:25:21.237,p1,B5,dest-plate-001,A2,skipped
-2025-05-17 06:25:21.237,p1,C6,dest-plate-001,A3,skipped
-2025-05-17 06:25:21.237,p1,D7,dest-plate-001,A4,skipped
-2025-05-17 06:25:36.188,p2,A3,dest-plate-001,A5,completed
-,p3,H3,dest-plate-001,A6,uncompleted
