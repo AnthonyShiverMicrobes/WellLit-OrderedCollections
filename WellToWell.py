@@ -426,10 +426,10 @@ class WTWTransferProtocol(TransferProtocol):
 		"""
 		# collect leftover transfers
 		skipped_transfers_in_plate = list(
-			set(self.lists['uncompleted']) &
+			( set(self.lists['uncompleted']) | set(self.lists['started'])  )&
 			set(self.transfers_by_plate[self.current_plate_name]))
 
-		# Mark uncomplete transfers as skipped for this plate
+		# Mark uncomplete and just started transfers as skipped for this plate
 		for tf in skipped_transfers_in_plate:
 			self.transfers[tf].updateStatus(TStatus.skipped)
 

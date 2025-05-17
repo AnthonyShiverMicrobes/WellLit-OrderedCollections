@@ -545,3 +545,22 @@
 2020-07-04 11:34:44,711 [INFO] - transfer complete: 539dbedc
 2020-07-04 12:00:25,273 [INFO] - Warning: Plate p2 not yet complete
 2020-09-16 16:37:46,598 [INFO] - Log Started
+2025-05-16 11:43:32,217 [INFO] - Log Started
+2025-05-16 11:58:21,405 [INFO] - Log Started
+2025-05-16 12:00:29,716 [INFO] - Log Started
+2025-05-16 12:01:42,238 [INFO] - CSV file protocols/good.csv loaded
+2025-05-16 12:01:42,252 [INFO] - TransferProtocol with 14 transfers in 3 plates created
+2025-05-16 12:27:31,858 [INFO] - 
+2025-05-16 12:31:40,236 [INFO] - CSV file protocols/short.csv loaded
+2025-05-16 12:31:40,247 [INFO] - TransferProtocol with 4 transfers in 3 plates created
+2025-05-16 12:31:59,598 [INFO] - 
+2025-05-16 12:32:50,600 [INFO] - 
+2025-05-16 12:33:41,567 [INFO] - Plate p1 is complete, press next plate to continue 
+2025-05-16 12:48:04,607 [INFO] - CSV file protocols/short.csv loaded
+2025-05-16 12:48:04,616 [INFO] - TransferProtocol with 4 transfers in 3 plates created
+2025-05-16 12:48:21,451 [INFO] - 
+2025-05-16 12:49:40,165 [INFO] - Plate p1 is complete, press next plate to continue 
+2025-05-16 12:49:55,167 [INFO] - Plate p1 is complete, press next plate to continue 
+2025-05-16 12:52:02,288 [INFO] - CSV file protocols/short.csv loaded
+2025-05-16 12:52:02,299 [INFO] - TransferProtocol with 4 transfers in 3 plates created
+2025-05-16 12:53:28,257 [INFO] - 
