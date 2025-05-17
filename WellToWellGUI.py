@@ -270,6 +270,7 @@ class WelltoWellWidget(WellLitWidget):
             self.wtw.writeTransferRecordFiles(None)
             self.updateLabels()
             self.updateLights()
+            self.next()
         if self.wtw.tp_present_bool():
             self.wtw.writeTransferRecordFiles(None)
 
