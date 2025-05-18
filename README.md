@@ -38,7 +38,7 @@ From the original:
 4. Install dependencies:<br/>
         `conda install matplotlib`<br/>
         `conda install pandas`<br/>
-        `pip install pypiwin3`<br/>
+        `pip install pypiwin32`<br/>
         `conda install -c conda-forge kivy`<br/>
         `pip install kivy-deps.angle~=0.3.3`<br/>
         `pip install kivy-deps.glew~=0.3.1`<br/>
