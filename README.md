@@ -1,9 +1,9 @@
 # WellLit-OrderedCollections
-#---- This is a work in progress and currently non-functional
-
 This is a fork of the WellToWell repository from CZ Biohub's Well-Lit device. The code has been updated so that it works with more recent versions of the python and kivy dependencies, and a new widget configuration has been added to facilitate a specific build of the device with different electronic components.
 
-While public, this code is currently a work in progress and non-functional. This README will updated when the project is ready to use.
+The code has been updated and successfully run on:<br/>
+1. A Macbook running Sequoia v.15.4.1 with a M2 Max chip
+2. A Lenovo ThinkCentre running Windows 11
 
 From the original:
 > This repository contains the code needed to run the CZ Biohub's Well-Lit device in the "Tube to Well-Lit" configuration, as described in the manuscript at:
