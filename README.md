@@ -11,7 +11,7 @@ From the original:
 >
 > The files needed to build the Well-Lit device can be downloaded from https://osf.io/f9nh5/.
 
-## Installation Instructions for Mac (updated instructions, debug only, not a final product)
+## Installation Instructions for Mac (updated instructions)
 
 1. Install Anaconda (from www.anaconda.com - tested on Anaconda version 4.8.3).
 2. Make anaconda environment:<br/>
@@ -29,7 +29,7 @@ From the original:
 7. To run the program:<br/>
         `python WellToWellGUI.py`<br/>
 
-## Installation Instructions for Windows (updated instructions, final product)
+## Installation Instructions for Windows
 
 1. Install Anaconda (from www.anaconda.com - tested on Anaconda version 4.8.3).
 2. Make anaconda environment:<br/>
